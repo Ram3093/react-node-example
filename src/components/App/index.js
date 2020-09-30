@@ -26,8 +26,8 @@ class App extends Component {
 	};
 
 	handleChange = (e) => {
-		const { id, value } = e.target;
-		return this.setState({ [id]: value });
+		
+		return this.setState({ [e.target.id]: e.target.value });
 	};
 
 	handleSubmit = async (e) => {
